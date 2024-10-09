@@ -56,7 +56,7 @@ with tab1:
 # Conteúdo da Aba 2 - Nagem
 with tab2:
     # Verificar e carregar os dados da aba 2
-    data_path = 'pasta_dados/hapvida.csv'
+    data_path = 'pasta_dados/nagem.csv'
     if not os.path.exists(data_path):
         st.error(f"Arquivo {data_path} não encontrado.")
     else:
