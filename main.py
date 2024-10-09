@@ -70,15 +70,15 @@ with tab2:
                                               (reclamacao_por_estado['DESCRICAO_tamanho'] <= max_texto)]
 
         # Gráficos com Plotly
-        fig_serie_temporal = px.line(reclamacao_por_estado, x='TEMPO', y='CASOS', title='Série Temporal do Número de Reclamações Diárias')
-        st.plotly_chart(fig_serie_temporal)
+        fig_serie_temporal__ = px.line(reclamacao_por_estado, x='TEMPO', y='CASOS', title='Série Temporal do Número de Reclamações Diárias')
+        st.plotly_chart(fig_serie_temporal__)
 
-        fig_status = px.bar(reclamacao_por_estado, x='STATUS', y='CASOS', title='Ocorrência do Status')
-        st.plotly_chart(fig_status)
+        fig_status__ = px.bar(reclamacao_por_estado, x='STATUS', y='CASOS', title='Ocorrência do Status')
+        st.plotly_chart(fig_status__)
 
-        fig_histogram = px.histogram(tamanho_texto, x='DESCRICAO_tamanho', color='STATUS', title='Distribuição do Tamanho dos Textos')
-        fig_histogram.update_layout(xaxis_title='Tamanho do Texto', yaxis_title='Frequência')
-        st.plotly_chart(fig_histogram)
+        fig_histogram__ = px.histogram(tamanho_texto, x='DESCRICAO_tamanho', color='STATUS', title='Distribuição do Tamanho dos Textos')
+        fig_histogram__.update_layout(xaxis_title='Tamanho do Texto', yaxis_title='Frequência')
+        st.plotly_chart(fig_histogram__)
 
 # Conteúdo da Aba 3 - Ibyte
 with tab3:
@@ -100,12 +100,12 @@ with tab3:
                                               (reclamacao_por_estado['DESCRICAO_tamanho'] <= max_texto)]
 
         # Gráficos com Plotly
-        fig_serie_temporal = px.line(reclamacao_por_estado, x='TEMPO', y='CASOS', title='Série Temporal do Número de Reclamações Diárias')
-        st.plotly_chart(fig_serie_temporal)
+        fig_serie_temporal_ = px.line(reclamacao_por_estado, x='TEMPO', y='CASOS', title='Série Temporal do Número de Reclamações Diárias')
+        st.plotly_chart(fig_serie_temporal_)
 
-        fig_status = px.bar(reclamacao_por_estado, x='STATUS', y='CASOS', title='Ocorrência do Status')
-        st.plotly_chart(fig_status)
+        fig_status_ = px.bar(reclamacao_por_estado, x='STATUS', y='CASOS', title='Ocorrência do Status')
+        st.plotly_chart(fig_status_)
 
-        fig_histogram = px.histogram(tamanho_texto, x='DESCRICAO_tamanho', color='STATUS', title='Distribuição do Tamanho dos Textos')
-        fig_histogram.update_layout(xaxis_title='Tamanho do Texto', yaxis_title='Frequência')
-        st.plotly_chart(fig_histogram)
+        fig_histogram_ = px.histogram(tamanho_texto, x='DESCRICAO_tamanho', color='STATUS', title='Distribuição do Tamanho dos Textos')
+        fig_histogram_.update_layout(xaxis_title='Tamanho do Texto', yaxis_title='Frequência')
+        st.plotly_chart(fig_histogram_)
